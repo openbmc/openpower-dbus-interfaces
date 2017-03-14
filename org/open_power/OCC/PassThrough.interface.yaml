@@ -1,0 +1,18 @@
+description: >
+    Implement to provide pass-through mechanism to the On Chip Controller (OCC).
+methods:
+    - name: Send
+      description: >
+          Pass through a command to the OCC.
+      parameters:
+        - name: command
+          type: array[int32]
+          description: >
+              An array of integers representing the command and payload.
+      returns:
+        - name: response
+          type: array[int32]
+          description: >
+              An array of integers representing the response.
+
+# vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
