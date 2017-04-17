@@ -1,0 +1,7 @@
+- name: WriteFailure
+  inherits:
+      - org.open_power.Common.Failure
+
+- name: ReadFailure
+  inherits:
+      - xyz.open_power.Common.Failure

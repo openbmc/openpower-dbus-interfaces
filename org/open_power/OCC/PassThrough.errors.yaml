@@ -1,0 +1,7 @@
+# org.open_power.OCC.PassThrough.WriteFailure
+- name: WriteFailure
+  description: Writing to OCC failed.
+
+# org.open_power.OCC.PassThrough.ReadFailure
+- name: ReadFailure
+  description: Reading from OCC failed.
