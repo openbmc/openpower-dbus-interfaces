@@ -1,0 +1,4 @@
+- name: Failure
+  meta:
+    - str: "ERROR=%s"
+      type: string
