@@ -1,0 +1,8 @@
+description: >
+    Definition of Power Supply Redundancy sensor, indicates whether
+    redundant power supply is enabled or not.
+properties:
+    - name: redundancy
+      type: boolean
+      description: >
+        Indicates whether redundancy is enabled or not

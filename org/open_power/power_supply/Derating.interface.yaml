@@ -1,0 +1,8 @@
+description: >
+    Definition of Power Supply Derating sensor, Power Supply derating
+    factor indicates the factor at which power supply is derated.
+properties:
+    - name: DeratingFactor
+      type: uint32
+      description: >
+        Power Supply Derating factor
