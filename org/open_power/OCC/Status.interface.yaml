@@ -1,0 +1,8 @@
+description: >
+    Definition of OCC status sensor, indicates whether OCC is
+    active on a processor on not.
+properties:
+    - name: Status
+      type: boolean
+      description: >
+        Indicates whether OCC is active or not
