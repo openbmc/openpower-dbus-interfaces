@@ -1,0 +1,4 @@
+#org.open_power.Control.Host.CommandNotSupported
+- name: CommandNotSupported
+  description: Command is not supported
+
