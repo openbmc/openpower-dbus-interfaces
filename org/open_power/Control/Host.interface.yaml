@@ -16,6 +16,10 @@ methods:
           - name: command
             type: enum[self.Command]
             description: Requested command to execute against the host
+          - name: data
+            type: byte
+            description: Data associated with the command.
+                         For now, it is used for sending OCC sensor ID.
 
 signals:
     - name: CommandComplete
