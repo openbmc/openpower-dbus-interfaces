@@ -1,0 +1,10 @@
+description: >
+    Implement to set OCC performance mode
+
+properties:
+    - name: Mode
+      type: boolean
+      description: >
+        Mode set to false, denotes OCC operating in nominal performance mode
+        and a true denotes OCC operating in maximum performance mode
+      default: false
