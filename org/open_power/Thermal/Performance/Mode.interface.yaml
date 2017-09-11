@@ -1,0 +1,10 @@
+description: >
+    Implement to set system thermal performance mode
+
+properties:
+    - name: Mode
+      type: boolean
+      description: >
+        Set to true to have system operate in nominal performance mode
+        and set to false to have system operate in maximum performance mode
+      default: false
