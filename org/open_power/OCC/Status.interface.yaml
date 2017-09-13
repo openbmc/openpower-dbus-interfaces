@@ -6,3 +6,18 @@ properties:
       type: boolean
       description: >
         Indicates whether OCC is active or not
+    - name: ThrottleTemp
+      type: boolean
+      default: 0
+      description: >
+        Indicates throttling due to an over temperature condition
+    - name: ThrottlePower
+      type: boolean
+      default: 0
+      description: >
+        Indicates throttling due to reaching the power cap limit
+    - name: ThrottleMem
+      type: boolean
+      default: 0
+      description: >
+        Indicates memory throttling due to an over temperature condition
