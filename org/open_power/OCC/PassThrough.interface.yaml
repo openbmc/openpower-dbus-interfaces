@@ -25,4 +25,20 @@ methods:
               should still be bytes worth of data (as though using array[byte]),
               so each entry in the array should pack as many bytes as possible.
 
+      errors:
+          # A write error could possibly pop up on a bad user input,
+          # but, these could be valid ones too. Since this can happen
+          # on bad user input also, receivers of this exception could
+          # retry the operation with right input. If the input was
+          # correct when this exception is received, this could possibly
+          # indicate an underlying device failure and no retry should be
+          # performed.
+          # A read failure would possibly indicate an underlying device
+          # error. This could be transient error too.
+          # Receivers of this exception could retry the operation
+          # and see if that works. If the error persists, no more retries
+          # should be performed.
+        - xyz.openbmc_project.Common.Device.Error.ReadFailure
+        - xyz.openbmc_project.Common.Device.Error.WriteFailure
+
 # vim: tabstop=8 expandtab shiftwidth=4 softtabstop=4
