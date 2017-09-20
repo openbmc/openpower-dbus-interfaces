@@ -26,6 +26,13 @@ AS_IF([test "x$enable_libopenpower_dbus" != "xno"], [
     AS_IF([test "x$SDBUSPLUSPLUS" == "x"],
         AC_MSG_ERROR([Cannot find sdbus++]))
 
+    AC_PATH_PROG([PHOSPHOR_DBUS_INTERFACES], [phosphor-dbus-interfaces])
+    AS_IF([test "x$SDBUSPLUSPLUS" == "x"],
+        AC_MSG_ERROR([Cannot find sdbus++]))
+
+    PKG_CHECK_MODULES([PHOSPHOR_DBUS_INTERFACES], [phosphor-dbus-interfaces],, [
+        AC_MSG_ERROR([Could not find phosphor-dbus-interfaces...openbmc/phosphor-dbus-interfaces package required])])
+
     # Check for baseline language coverage in the compiler for the C++14 standard
     AX_CXX_COMPILE_STDCXX_14([noext])
     AX_APPEND_COMPILE_FLAGS([-Wall -Werror], [CFLAGS])
