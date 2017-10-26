@@ -1,0 +1,7 @@
+- name: Callout
+  level: ERR
+  meta:
+    - str: "ESEL=%s"
+      type: string
+  inherits:
+    - org.open_power.Common.Callout.Procedure
