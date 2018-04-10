@@ -1,0 +1,16 @@
+description: >
+    Implement this interface to represent an error log in PEL format.
+
+    An example app implementing this interface watches for error logs created
+    by phosphor-looging app in the BMC and then creates new objects with the
+    same path as phosphor-logging. The new objects will implement the PEL
+    interface, the app will convert an eSEL to PEL in text format,if found
+    in the original log. This allows a REST server to get the PEL properties of
+    a log as well when queried for a log in the BMC,since both the
+    phosphor-logging and openpower-logging properties are combined together.
+
+properties:
+    - name: PEL
+      type: string
+      description: >
+          The platform event logn text format.
