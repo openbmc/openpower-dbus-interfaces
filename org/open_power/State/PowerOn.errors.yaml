@@ -1,0 +1,5 @@
+- name: MinVersionRequirementNotMet
+  description: >
+    The system was requested to power on but one or more components do not meet
+    the minimum version requirement and need to be updated. This may cause the
+    power on request to fail.

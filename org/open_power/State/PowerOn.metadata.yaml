@@ -1,0 +1,7 @@
+- name: MinVersionRequirementNotMet
+  level: ERR
+  meta:
+    - str: "MIN_VERSION=%s"
+      type: string
+    - str: "ACTUAL_VERSION=%s"
+      type: string
