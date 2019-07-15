@@ -1,0 +1,65 @@
+description: >
+    Implement to provide open power boot parameters.
+
+properties:
+    - name: IplType
+      default: 'PowerOn'
+      type: enum[self.Type]
+      description: >
+        The type of system ipl, ipl types can be power on, power off
+        or other transitions defined for power systems.
+
+    - name: IplMode
+      default: 'Normal'
+      type: enum[self.Mode]
+      description: >
+        Indicates the mode of ipl, whether execute all steps continuously
+        or execute each single steps independantly.
+
+enumerations:
+     - name: Type
+       description: >
+         Desired host ipl types
+       values:
+         - name: PowerOn
+           description: >
+             A normal system power on
+         - name: PowerOff
+           description: >
+             Powering off a running system
+         - name: Quiesc
+           description:
+             A transition to error state
+         - name: MemPreseveReboot
+           description:
+             A spcial type of system reboot where the host memory
+             is preserved.
+     - name: Mode
+       description: >
+         Mode of system ipl, whether a continues ipl or a step by
+         step ipl.
+       values:
+         - name: Normal
+           description: >
+             Normal continues IPL
+         - name: Step
+           description: >
+             IPLing the system by running each step independently
+
+methods:
+     - name: DoIpl
+       description: >
+         Method to trigger a IPL step.
+       parameters:
+         - name: StepMajor
+           description: >
+             Major number of the step to be executed
+           type: uint32
+         - name: StepMinor
+           description: >
+             Monor number of the step to be executed.
+           type: uint32
+       Errors:
+         - xyz.openbmc_project.Common.Error.InternalFailure
+         - xyz.openbmc_project.Common.Error.InvalidArgument
+         - org.open_power.State.BootFailure
