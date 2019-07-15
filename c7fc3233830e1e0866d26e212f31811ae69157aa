@@ -1,0 +1,9 @@
+Ok-To-Test+1: Jenkins <openbmc-ci-admin@ozlabs.org>
+Verified+1: Jenkins <openbmc-ci-admin@ozlabs.org>
+Code-Review+1: Adriana Kobylak <anoo@linux.ibm.com>
+Code-Review+2: Brad Bishop <radsquirrel@gmail.com>
+Submitted-by: Brad Bishop <radsquirrel@gmail.com>
+Submitted-at: Mon, 15 Jul 2019 09:03:17 +0000
+Reviewed-on: https://gerrit.openbmc-project.xyz/c/openbmc/openpower-dbus-interfaces/+/23128
+Project: openbmc/openpower-dbus-interfaces
+Branch: refs/heads/master
