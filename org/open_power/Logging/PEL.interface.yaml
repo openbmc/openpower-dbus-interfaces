@@ -32,5 +32,28 @@ methods:
         description: >
           The PEL data
     errors:
-       - xyz.openbmc_project.Common.Error.InternalFailure
        - xyz.openbmc_project.Common.Error.InvalidArgument
+
+  - name: HostAck
+    description: >
+      Notifies the PEL handler that the host (usually the OS) acked a PEL.
+    parameters:
+      - name: pelID
+        type: uint32
+        description: >
+          The PEL log ID
+    errors:
+       - xyz.openbmc_project.Common.Error.InvalidArgument
+
+  - name: HostReject
+    description: >
+      Notifies the PEL handler that the host (usually the OS) was sent a
+      malformed PEL.
+    parameters:
+      - name: pelID
+        type: uint32
+        description: >
+          The PEL log ID
+    errors:
+       - xyz.openbmc_project.Common.Error.InvalidArgument
+
