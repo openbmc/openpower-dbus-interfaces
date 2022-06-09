@@ -8,7 +8,7 @@ defined generically; it is specifically and variously implemented throughout
 OpenBMC services, which allows these services to be individually restored to
 factory defaults as needed.
 
-More reading for OpenBMC services [here](https://github.com/openbmc/phosphor-dbus-interfaces/blob/master/xyz/openbmc_project/Common/FactoryReset/README.md).
+More reading for OpenBMC services [here](https://github.com/openbmc/phosphor-dbus-interfaces/blob/master/yaml/xyz/openbmc_project/Common/FactoryReset/README.md).
 
 ## Known Implementations (listed by D-Bus service)
 
