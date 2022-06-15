@@ -1,0 +1,8 @@
+Verified+1: OpenBMC CI <openbmcbump-ci@yahoo.com>
+Code-Review+1: Gunnar Mills <gmills@us.ibm.com>
+Code-Review+2: Patrick Williams <patrick@stwcx.xyz>
+Submitted-by: Patrick Williams <patrick@stwcx.xyz>
+Submitted-at: Wed, 15 Jun 2022 11:27:12 +0000
+Reviewed-on: https://gerrit.openbmc.org/c/openbmc/openpower-dbus-interfaces/+/54439
+Project: openbmc/openpower-dbus-interfaces
+Branch: refs/heads/master
