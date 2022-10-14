@@ -1,0 +1,8 @@
+Verified+1: OpenBMC CI <openbmcbump-ci@yahoo.com>
+Code-Review+1: Andrew Jeffery <andrew@aj.id.au>
+Code-Review+2: Brad Bishop <bradleyb@fuzziesquirrel.com>
+Submitted-by: Brad Bishop <bradleyb@fuzziesquirrel.com>
+Submitted-at: Fri, 14 Oct 2022 18:32:00 +0000
+Reviewed-on: https://gerrit.openbmc.org/c/openbmc/openpower-dbus-interfaces/+/57858
+Project: openbmc/openpower-dbus-interfaces
+Branch: refs/heads/master
